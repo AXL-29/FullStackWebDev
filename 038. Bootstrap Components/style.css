@@ -1,5 +1,96 @@
+/* ================= GENERAL RESET & TRANSITIONS ================= */
+* {
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+/* ================= FEATURES ================= */
+.feature {
+  text-align: center;
+  padding: 1rem;
+}
+
 .feature-icon {
   width: 4rem;
   height: 4rem;
+  margin: 1rem auto;         /* centers automatically */
   border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0d6efd, #4dabf7); /* subtle gradient */
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Keep “Get a quote” link left-aligned */
+.feature .icon-link {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #0d6efd;
+}
+.feature .icon-link:hover {
+  text-decoration: underline;
+  transform: translateX(4px);
+}
+
+/* ================= NAVBAR ================= */
+.nav-link {
+  position: relative;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #0d6efd;
+  transform: scale(1.05);
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 0.5rem;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= CAROUSEL ================= */
+.carousel-item {
+  height: 600px; /* balanced height */
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease;
+}
+.carousel-item img:hover {
+  transform: scale(1.02); /* subtle zoom effect */
+}
+
+/* ================= FOOTER ================= */
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #f8f9fa;
+  border-top: none;
+}
+footer a {
+  color: #6c757d;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #0d6efd;
+}
+
+/* ================= CLEANUP ================= */
+hr,
+.border-top,
+.border-bottom {
+  display: none !important;
 }

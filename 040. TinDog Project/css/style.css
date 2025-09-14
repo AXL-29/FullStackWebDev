@@ -26,3 +26,41 @@
   height: 100px;
   border-radius: 50%;
 }
+
+/* Hero Section */
+.hero-img {
+  max-height: 450px;
+  object-fit: contain;
+}
+.btn-custom {
+  transition: all 0.3s ease;
+}
+.btn-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Features */
+.icon-square {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial */
+#testimonial {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./images/dog-bg.jpg") center/cover no-repeat;
+}
+
+/* Pricing */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer p {
+  color: rgba(255, 255, 255, 0.6);
+}

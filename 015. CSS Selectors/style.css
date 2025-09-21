@@ -1,26 +1,31 @@
+/* General Reset */
+* {
+  text-align: center;
+}
+
+/* Ordered List Styling */
 ol {
   margin-left: -40px;
   margin-top: -20px;
   list-style-position: inside;
 }
 
-/* Write your CSS below, don't change the rules above. */
-*{
-  text-align: center;
-}
-
+/* Paragraph Styling */
 p {
   color: red;
 }
 
+/* Class Selector */
 .note {
   font-size: 20px;
 }
 
+/* ID Selector */
 #id-selector-demo {
   color: green;
 }
 
-li[value = "4"] {
+/* Attribute Selector */
+li[value="4"] {
   color: blue;
 }

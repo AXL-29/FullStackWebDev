@@ -1,0 +1,55 @@
+1. What is Nesting?
+    - Nesting means putting one list inside another list item
+
+A list is nested when:
+    - A <ul> or <ol> is placed inside an <li>
+
+This is used when items have sub-items
+
+Real-life Example:
+    -Fruits
+        - Apple
+        - Banana
+    - Vegetables
+        - Carrot
+        - Potato
+
+2. What is indentation
+    - Indentation is the spacing (tabs or spaces) used in your HTML code to show structure and hierarchy.
+
+Important:
+    - Indentation is for humans, not browsers
+    - Browsers ignore indentation
+    - Improves readability and debugging
+
+3. Nesting vs Indentation (Difference)
+
+    Feature                 Nesting                     Indentation
+    What it is              HTML structure              Code formatting
+    Affects output          Yes                         No
+    Purpose                 Create sub-lists            Makes code readable
+
+4. Correct Nesting Rule
+    - A nested list must be inside an <li>, not directly inside <ul> or <ol>.
+    Correct concept (no code):
+        - <ul>
+            - <li> Item 1
+                - <ul>
+                    - <li> Sub-item
+            - <li> Item 2
+    
+    Wrong concept:
+        - <ul>
+            - <ul> (must be inside <li>)
+
+5. Why Nesting is important
+    - Organizes complex information
+    - Used in menus and navigation
+    - Improves accessibility
+    - Reflects real-world hierarchy
+
+Simple Summary:
+    - Nesting = list inside a list item
+    - Indentation = spacing to show structure in code
+    - Nesting affects how the list appears
+    - Indentation helps developers understand the code

@@ -1,0 +1,37 @@
+What Is the Image Element?
+The image element (<img>) is used to display images on a webpage.
+
+It is a self-closing (void) element, meaning:
+    - It does not have a closing tag
+    - All information is provided through attributes
+
+
+Main Purpose
+    - Show photos, icons, logos, and graphics
+    - Enhance content visually
+    - Support branding and user experience
+
+Essential Attributes
+    - src (source) – path or URL of the image
+    - alt (alternative text) – text shown if the image fails to load and read by screen readers
+
+    📌 The image will not display without src
+    📌 alt is required for accessibility
+
+Why alt Is Important
+    - Helps visually impaired users
+    - Displays text if image is broken
+    - Improves SEO
+    - Required for accessibility standards
+
+Image Formats Commonly Used
+    - JPEG/JPG – photos
+    - PNG – images with transparency
+    - SVG – icons and logos (scalable)
+    - WEBP – modern, smaller file size
+
+Simple Summary
+    - <img> displays images
+    - It is self-closing
+    - src shows where the image comes from
+    - alt describes the image for accessibility

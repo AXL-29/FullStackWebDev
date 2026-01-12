@@ -1,0 +1,32 @@
+What is a Self-Closing Tag:
+    A self-closing tag is an HTML tag that does not need a closing tag.
+    It contains no inner content and closes itself.
+
+    Unlike normal tags (<p> content </p>), self-closing tags stand alone.
+
+Common Self-Closing Tags
+Tag                     Purpose
+<br>                    Line break
+<hr>                    Horizontal rule (line)
+<img>                   Display image
+<input>                 Input field
+<meta>                  Metadata
+<link.                  External resources (CSS)
+
+Important Notes:
+- Self-closing tags cannot contain text or other elements
+- They are often used for structure or input, not content.
+- Don't add closing tags like </br> or </img>
+
+Diff Checker - https://www.diffchecker.com/
+
+Do's and Don't
+Don't
+<p>
+    Paragraph1 <br>
+    Paragraph2 <br>
+</p>
+
+Do
+<p>Paragraph1</p>
+<p>Paragraph2</p>

@@ -1,0 +1,26 @@
+Paragraph element in HTML is used to display block of text.
+It is written using the <p> tag.
+
+Key Characteristics of <p>
+    - Used for normal text content
+    - Always starts on a new line
+    - Adds margin (space) by default
+    - Block-level element
+
+When to use <p>
+    - Writing explanations
+    - Adding descriptions
+    - Displaying article or blog content
+    - Showing readable text on a webpage.
+
+
+Lorem Ipsum
+    - is a dummy or placeholder text commonly used in web design, graphic design and publishing.
+    - It is used to fill space when the real content is not yet available.
+    - It helps designer and developers focus on layout and design, not the actual text.
+
+Why use Lorem Ipsum
+    - Focus on design and layout
+    - Test spacing, fonts, and alignment.
+    - Avoid distraction from real content
+    - Common in HTML, CSS, and UI mockups.

@@ -13,3 +13,21 @@ Tag                 Description
 <h4>                Smaller subsection
 <h5>                Minor heading
 <h6>                Least important
+
+1. Don't have more than h1
+Don't
+<h1>Hello World</h1>
+<h1>Another One</h1>
+
+Do's
+<h1>Hello World</h1>
+<h2>Another One</h2>
+
+2. Don't skip a level 
+Don't
+<h1>Title</h1>
+<h3>Subtitle</h3>
+
+Do's
+<h1>Title</h1>
+<h2>Subtitle</h2>

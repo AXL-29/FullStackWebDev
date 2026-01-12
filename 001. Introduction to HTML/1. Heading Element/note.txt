@@ -1,0 +1,15 @@
+What are the HTML headings
+
+HTML headings are used to define tiles and subtitles on a webpages.
+They help structure content, improve readability, and are very 
+important for SEO and accessibility.
+
+Heading Tags (<h1> to <h6>)
+HTML provides six levels of headings:
+Tag                 Description
+<h1>                Main heading (most important)
+<h2>                Section heading
+<h3>                Subsection heading
+<h4>                Smaller subsection
+<h5>                Minor heading
+<h6>                Least important

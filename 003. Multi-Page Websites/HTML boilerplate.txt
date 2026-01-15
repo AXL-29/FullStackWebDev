@@ -1,0 +1,22 @@
+An HTML boilerplate is the basic template or starter structure of an HTML file.
+It contains the minimum required code so a webpage works correctly in a browser.
+
+HTML boilerplate = the starting skeleton of every HTML page.
+
+Why HTML boilerplate is important
+    - Tells the browser this is an HTML5 document
+    - Sets the language
+    - Allows text to display correctly
+    - Makes the page compatible with modern browsers.
+
+What's inside an HTML boilerplate?
+    - DOCTYPE - tells the browser you are using HTML5
+    - HTML element - wraps the entire page
+    - HEAD section - contains page info (title, charset, links)
+    - BODY section - contains everything visible on the page
+
+When do you use it?
+    - Every time you create a new HTML file
+    - For single-page websites
+    - For multi-page websites
+    - For school or pratice projects.

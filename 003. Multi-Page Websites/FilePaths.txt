@@ -1,0 +1,29 @@
+Multi-page Website - is a website made up of separate HTML files, where each page loads independently when the user clicks a link.
+
+File path - is the address or location of a file inside a computer or website folder.
+            it tells the browser where to find a file like an image, CSS, or another HTML page.
+
+Relative File Path
+    - Path based on the current file's location
+    - Most commonly used in websites
+
+    Examples:
+        - css/style.css -> go into css folder
+        - images/logo.png -> go into images folder
+        - ../index.html -> go up one folder
+    
+Absolute File Path
+    - Full path starting from the root
+    - Rarely used in local websites
+
+    Examples:
+        - C:/Users/Jade/Desktop/website/index.html
+        - /images/logo.png (root-based on a server)
+
+Special symbols
+
+Symbol                  Meaning
+/                       go into a folder
+../                     go up one folder
+./                      current folder
+..                      parent folder

@@ -1,0 +1,12 @@
+Webpage is one page of content on a website.
+
+Think of a website like a book
+    - Website = the whole book
+    - Webpage = one page in the book
+
+Example of webpages:
+    - Home page
+    - About page
+    - Contact page
+
+Each of these is a separate webpage.

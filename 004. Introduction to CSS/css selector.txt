@@ -1,0 +1,72 @@
+CSS Selector - used to select (target) HTML elements that you want to style.
+
+Why CSS Selectors are important:
+    - They control where styles apply.
+    - They help you design specific parts of a webpage
+    - They prevent styles from affecting the wrong elements.
+
+Basic Type of CSS Selectors
+    1. Element Selector
+        - Target all elements of a specific Type
+
+        Example idea:
+            - Select all paragraph
+            - Select all headings
+
+        Example use:
+        p {
+            CSS code
+        }
+
+        h1 {
+            CSS code
+        }
+        
+        Used when you want every element of that type to look the same.
+
+    2. Class Selector
+        - Target elements with a specific class attribute.
+            - Starts with a dot (.)
+            - Can be used on multiple elements
+
+        Example Idea:
+        - Style all the items with class highlights
+
+        Example use:
+        .class-name {
+            CSS code
+        }
+
+        Best for reusable styles.
+
+    3. ID Selector
+    Target one unique element.
+        - Starts with a hash (#)
+        - Must be unique on the page
+
+    Example Idea:
+        - Style a single header or section
+
+    Example use:
+        #id-name {
+            CSS code
+        }
+    
+    Used for one specific element only.
+
+    4. Group Selector
+    Target multiple elements at once.
+    
+    Example idea:
+        - Style all headings the same way
+    
+    This helps reduce repetition in your styles.
+
+    5. Descendant Selector
+    Target elements inside another element.
+
+    Example Idea:
+        - Style only link inside a navigation bar
+    
+    Very useful for structured layouts.
+

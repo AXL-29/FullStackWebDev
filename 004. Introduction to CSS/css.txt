@@ -1,0 +1,45 @@
+Introduction to CSS
+
+CSS (Cascading Style Sheet) is the language used to style and design web pages. 
+While HTML gives structures (headings, paragraphs, images), CSS controls how they look-colors, fonts, spacing, layout and resposiveness.
+
+Why use CSS?
+    - Design and Appearance - colors, fonts, backgrounds
+    - Layout Control - spacing, alignment, positioning
+    - Responsive Design - works on desktop, tablet, mobile
+    - Reusability - style many pages with one stylesheet
+    - Separation of Concerns - HTML = structure, CSS = style
+
+How CSS Works (Basic Idea)
+    CSS targets HTML elements using selectors and applies rules to them.
+
+    Rule structure (conceptual):
+        - Selector -> which HTML element to style
+        - Property -> what do you want to change
+        - Value -> how you want it to look
+
+    Example (concept only, not code-heavy):
+        - Select a paragraph
+        - Change its text color to blue
+
+Ways to Apply CSS
+    1. Inline CSS - style written directly inside an HTML element
+    2. Internal CSS - style placed inside a <style> tag in the HTML file.
+    3. External CSS (Best Practice) - styles written in a separate .css file and linked to HTML
+
+    External CSS is preferred because it's clean, reusable, and scalable.
+
+Common Things You Style with CSS
+    - Text: font size, color, alignment
+    - Boxes: width, height, padding, margin, border
+    - Layout: flexbox, grid
+    - Effects: hover, transitions, animations
+
+The CSS Box Model (Very Important)
+    Every HTML element is treated as a box:
+    - Content - text or image
+    - Padding - space inside the box
+    - Border - edge of the box
+    - Margin - space outside the box
+
+    

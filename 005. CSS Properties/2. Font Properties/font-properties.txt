@@ -1,0 +1,64 @@
+CSS font properties are the styles that control how text looks on a webpage.
+They define aspects like the typeface, size, thickness, spacing, and style of text.
+
+CSS FONT PROPERTIES
+1. font-family
+    - Defines which font the text uses.
+
+        font-family: Arial, Helvetica, sans-serif;
+
+    You can list multiple fonts as fallbacks.
+
+2. font-size
+    - Controls how large or small the font is.
+  
+        font-size: 16px;     /* pixels */
+        font-size: 16pt;     /* point */
+        font-size: 120%;     /* relative to parent */
+        font-size: 10em;     /* relative to parent */
+        font-size: 1.5rem;   /* relative to root font size */
+
+
+3. font-weight
+    - Controls how bold the text is.
+       
+        font-weight: normal;   /* default */
+        font-weight: bold;
+        font-weight: 300;      /* thin */
+        font-weight: 700;      /* bold */
+
+    Numeric weight range from 100 - 900.
+
+4. font-style
+    - Controls italics.
+    
+        font-style: normal;
+        font-style: italic;
+        font-style: oblique;
+
+5. font-variant
+    - Controls small-caps and other font variantions.
+    
+        font-variant: small-caps;
+
+6. line-height
+    - Controls the spacing between lines of text.
+    
+        line-height: 1.5;     /* commonly used */
+
+7. letter-spacing
+    - Controls the spacing between characters.
+
+        line-height: 1.5;     /* commonly used */
+
+8. word-spacing
+    - Controls spacing between words.
+
+        word-spacing: 4px;
+
+9. font
+    - A shorthand property that sets multiple font setting at once:
+        
+        font: italic small-caps bold 16px/1.5 "Arial", sans-serif;
+        ``
+    The order matters.

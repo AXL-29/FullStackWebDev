@@ -1,0 +1,64 @@
+CSS colors are simple ways to tell the browser what color to use when styling HTML elements.
+They control things like text color, backgrounds, borders, shadows, highlights, and more.
+
+1. Color Names
+    - CSS includes about 140 predefined color names such as:
+        color: red;
+        color: blue;
+        color: lightgreen;
+        color: goldenrod;
+        color: tomato;
+    Easy to remember, but less precise.
+
+2. Hexadecimal Colors (#RRGGBB)
+    - The most common format
+    - Each pair represent Red, Green, and Blue in hex (00-FF)
+
+        color: #000000; /* black */
+        color: #ffffff; /* white */
+        color: #ff0000; /* red */
+        color: #00ff00; /* green */
+        color: #0000ff; /* blue */
+
+    You can also use shorthand:
+
+        color: #f00;   /* red */
+        color: #0f0;   /* green */
+        color: #00f;   /* blue */
+
+3. RGB Colors
+    - Use numerical red, green, blue values (0-255):
+        
+        color: rgb(255, 0, 0);   /* red */
+        color: rgb(0, 128, 255); /* blue-ish */
+
+    With transparency:
+        color: rgba(255, 0, 0, 0.5); /* 50% transparent red */
+
+4. HSL Colors (Hue, Saturation, Lightness)
+    - Very intuitive once you get to used to it.
+    
+        color: hsl(0, 100%, 50%);    /* red */
+        color: hsl(120, 100%, 50%);  /* green */
+        color: hsl(240, 100%, 50%);  /* blue */
+
+    With transparency:
+        color: hsla(200, 80%, 50%, 0.3);
+
+5. System Color (CSS4)
+    - Dynamic colors that match OS themes (light/dark mode).
+
+        color: CanvasText;
+        background-color: Canvas;
+
+6. Currentcolor Keyword
+    - Useful for inheriting the current text color.
+    
+        border: 2px solid currentcolor;
+
+7. Transparent Keyword
+    - Makes an element's color fully transparent
+
+    color: transparent;
+
+    

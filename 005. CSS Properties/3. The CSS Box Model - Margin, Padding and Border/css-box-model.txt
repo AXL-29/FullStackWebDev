@@ -145,4 +145,51 @@ It is made up of four layers:
     - Add space betweeen two sections
     - Margin does not affect element size, only the spacing around it.
 
+    Core Margin Properties
+    1. margin-top
+        - Adds space above the element
     
+    2. margin-right
+        - Adds space to the right of the element
+
+    3. margin-bottom
+        - Adds space below the element
+    
+    4. margin-left
+        - Adds space to the left of the element
+
+    Each side can be controlled independently.
+
+    Margin Shorthand
+    Just like padding, margin has shorthand forms.
+
+    One Value
+        - Same margin on all sides
+
+    Two Values
+        - First -> top & bottom
+        - Second -> left & right
+
+    Three Values
+        - Top -> left & right -> bottom
+
+    Four Values
+        - Top -> right -> bottom -> left (clockwise)
+
+    clockwise rule applies here too.
+
+    Special Margin Value
+    margin-auto
+        - Commonly used to center elements horizontally
+        - Works when the element has a fixed width
+
+        Example idea:
+        - Center a container or card on the page
+
+    Margin Collapsing (Important Concept)
+    Vertical margin can collapse betweeen:
+        - Parent and child
+        - Two stacked elements
+
+        Only the largest margin is applied, not the sum
+        (This happens only vertically, not horizontally.)

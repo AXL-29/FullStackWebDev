@@ -36,6 +36,62 @@ It is made up of four layers:
     - A solid black outline around a card
     - Border counts toward total size
 
+    They define the thickness, style, color and shape of that line.
+
+    Core Border Properties
+    1. border-width
+        - Controls how thick the border is
+        - Can be thin, medium, thick, or a specific size.
+
+        Thicker borders make elements stand out more.
+
+    2. border-style (Required)
+        - Defines how the border looks.
+        - Common values:
+            - solid     - straight line
+            - dashed    - broken line
+            - dotted    - dots
+            - double    - two lines
+            - none      - no border
+        
+        No border will appear without a style, even if width and color are set.
+
+    3. border-color
+        - Set the color of the border
+        - Can use color names, HEX, RGB, etc.
+
+        Example idea:
+            - Black border
+            - Blue outline
+            - Red warning box
+
+    Shorthand Border Property
+    - Instead of writing width, style, and color separately, you can combine them:
+    
+    Concept:
+    border: width style color;
+
+    This is cleaner and commonly used.
+
+    Side-Specific Border Properties
+    You can style each side differently:
+    - border-top
+    - border-right
+    - border-bottom
+    - border-left
+
+    Example idea:
+    - Only underline an element using a bottom border.
+
+    Rounded Borders
+    4. border-radius
+        - Rounds the corners of a border
+        - Higher values = more rounded
+        - Can create:
+            - Rounded cards
+            - Pills
+            - Circles (with equal width and height)
+
 4. Margin (Outer Space)
     - Space outside the border
     - Creates distance betweeen elements

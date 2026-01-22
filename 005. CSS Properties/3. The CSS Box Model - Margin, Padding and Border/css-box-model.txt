@@ -27,6 +27,50 @@ It is made up of four layers:
     - Add space so text doesn't touch the border
     - Padding affects element size
 
+    Padding is inside the box, unlike margin which is outside.
+
+    Core Padding Properties:
+    1. padding-top
+        - Add space above the content
+
+    2. padding-right
+        - Adds space to the right of the content
+
+    3. padding-bottom
+        - Adds space below the content
+
+    4. padding-left
+        - Adds space to the left of the content.
+
+    You can control each side individually.
+
+    Padding Shorthand
+    Instead of writing all four sides separately, you can combine them.
+
+    One value
+        - Same padding on all sides
+
+    Two values
+        - First -> top & bottom
+        - Second -> left & right
+
+    Three values
+        - Top -> left & right -> bottom
+
+    Four Values
+        - Top -> right -> bottom -> left (clockwise)
+
+        Think: clockwise direction
+
+    Padding and Element Sizw (Important!)
+    Padding adds to the total size of an element.
+
+    Example:
+        - Width = 200px
+        - Padding = 200px
+            Final size becomes larger than 200px
+        
+
 3. Border (Edge)
     - Surrounds the padding and content
     - Has width, style and color

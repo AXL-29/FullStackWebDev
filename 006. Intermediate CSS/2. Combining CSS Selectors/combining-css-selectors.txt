@@ -1,0 +1,109 @@
+Combining CSS Selectors
+    - Combining selectors means using more than one selector together to target elements more precisely
+    - This helps you control specificity without using IDs or !important.
+
+1. Descendent Selector (space)
+    Target elements inside another element (any level).
+
+    .card p {
+        color: gray;
+    }
+
+    - Select all <p> inside .card
+    - Most commonly used combination
+
+    Specificity:
+    Class (10) + Element(1) = 11
+
+2. Child Selector (>)
+    Targets direct children only.
+
+    .card > p {
+        color: blue;
+    }
+
+    - Only <p> that are immediate children
+    - Safer than descendant selector
+
+3. Multiple Class Selector (No Space)
+    Target element that have all listed classes.
+
+    .button.primary{
+        background-color: green;
+    }
+
+    - Element must have both classes
+    - Very clean way to override styles
+
+    Specificity:
+    Class + Class = 20
+
+4. Grouping Selectors (Comma ,)
+    Apply the same styles to multiple selectors.
+
+    h1, h2, h3 {
+        font-weight: bold;
+    }
+
+    - Reduces repetition
+    - No effect on specificity
+
+5. Element + Class Selector
+    Target a specific element with a class.
+
+    button.primary {
+        color: white;
+    }
+
+    - Higher priority than .primary alone
+    - Use sparingly
+
+    Specificity:
+    Element(1) + Class(10)
+
+6. Attribute Selectors
+    Targets elements based on attributes.
+
+    input[type="text"] {
+        border: 1px solid gray;
+    }
+
+    - Very useful for forms
+    - Clean and readable
+
+7. Pseudo-classes
+    Targets states of elements.
+
+    button:hover {
+        background-color: darkblue;
+    }
+
+    - Interaction-based styling
+    - Comes after base styles
+
+8. Pseudo-elements
+    Targets parts of an element.
+
+    p::first-letter {
+        font-size: 2rem;
+    }
+
+9. What NOT to Do (Bad Practice)
+    Over-chaining selectors
+
+    div.container ul li a span {
+        color: red;
+    }
+
+Best Practice Summary
+
+Selector type               When to Use
+.class                      Default styling
+.class p                    Scoped styles
+.class.class                Variations
+.class > p                  Strict structure
+:hover                      States
+,                           Reuse styles
+
+Golden Rule
+    Combine selectors to be specific - not complicated.

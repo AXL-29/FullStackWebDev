@@ -1,0 +1,111 @@
+CSS Positioning controls where an element is placed on the page and how it behavess relative to other elements.
+
+You set it using position property.
+
+position: static | relative | absolute | fixed | sticky;
+
+1. position: static (DEFAULT)
+    .box {
+        position: static;
+    }
+
+    - default for all elements
+    - follows normal document flow
+    - top, left, right, bottom do NOT work
+    
+    Use Case: Almost everything by default
+
+2. position: relative
+
+    .box {
+        position: relative;
+        top: 10px;
+        left: 20px;
+    }
+
+    - moves relative to its original position
+    - still keeps its space in the layout
+    - creates a position context for children
+
+    Use Case:
+    - Small nudges
+    - Parent for absolute elements
+
+3. position: absolute
+
+    .child {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    - removed from normal flow
+    - positioned relative to nearest position ancestor
+    - if no positioned parent -> relative to <body>
+
+    Requires:
+    .parent {
+        position: relative;
+    }
+
+    Use Case:
+    - Dropdown
+    - Tooltips
+    - Badges/icons on cards
+
+4. position: fixed
+    .navbar {
+        position: fixed;
+        top: 0;
+    }
+
+    - positioned relative to viewport
+    - does NOT move when scrolling
+    - removed from normal flow
+
+    Use case:
+    - sticky headers
+    - floating buttons
+    - chat widgets
+
+5. position: sticky;
+    .headers {
+        position: sticky;
+        top: 0;
+    }
+    - Acts like relative until scroll
+    - then acts like fixed
+    - needs a top, left, etc. to work
+
+    Won't work if:
+    - parent has overflow: hidden
+
+    Use Case:
+    - Section headers
+    - Tables
+    - Side menus
+
+Position Offsets
+    Used with relative, absolute, fixed, sticky:
+        - top, right, bottom, left
+
+6. z-index (Stacking Order)
+    .modal {
+        position: fixed;
+        z-index: 1000;
+    }
+
+    - higher number -> on top
+    - works only on positioned elements
+    - affected by stacking context
+
+    - avoid huge numbers like 99999
+
+Best Practices
+DO's
+- Use Flexbox / Grid for layout
+- Use position for fine control
+
+Dont's
+- Don't build full layout with absolute
+- Avoid magic numbers (top: 347px)

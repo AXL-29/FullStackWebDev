@@ -1,0 +1,131 @@
+CSS Specificity - How CSS Rules Conflict
+    - When multiple CSS rules target the same element, the browser must decide which rules wins.
+    - This decision is based on CSS Specificity and a few priority rules.
+
+1. The Specificity Order (Lowest -> Highest)
+    1. Element Selector (lowest priority)
+        p {
+            color: blue;
+        }
+
+    2. Class Selector
+        .text {
+            color: green;
+        }
+
+    3. ID Selector
+        #main {
+            color: red;
+        }
+
+    4. Inline Style
+        <p style="color: purple;"> Hello </p>
+
+    5. !important (highest priority)
+        p {
+            color: black !important;
+        }
+
+2. Specificity Numbers (How the browser thinks)
+Browsers calculate specificity like this:
+    Inline styles       -> 1000
+    ID Selector         -> 100
+    Class Selector      -> 10
+    Element Selector    -> 1
+
+3. Example of Conflict
+HTML:
+    <p id="para" class="text"> Hello World </p>
+
+CSS:
+    p {
+        color: blue;
+    }
+
+    .text {
+        color: green;
+    }
+
+    #para {
+        color: red;
+    }
+
+Final Color: RED
+Why?
+    - p     -> specificity 1
+    - .text -> specificity 10
+    - #para -> specificity 100
+
+    Highest number wins
+
+Combine Selectors Add Up
+    div p {
+        color: blue;    /* 1 + 1 = 2 */
+    }
+
+    .container p {
+        color: green;   /* 10 + 1 = 11 */
+    }
+
+    Winner .container p (higher specificity)
+
+5. What If Specificity is the SAME?
+The last rule written wins
+
+    p {
+        color: blue;
+    }
+
+    p {
+        color: red;
+    }
+
+Final color: red
+This is called source order.
+
+6. !important - The Nuclear Option
+    p {
+        color: blue !important;
+    }
+
+    #para {
+        color: red;
+    }
+
+Final color: blue
+Even IDs lose to !important
+
+Use it sparingly - it breaks natural CSS flow and causes headaches later.
+
+7. Common Mistakes Beginners Make
+    - Thinking class beats ID
+    - Overusing !important
+    - Not realizing later rules override earlier ones
+    - Writing overly complex selectors
+
+Easy Way to Remember
+Specificity Ladder:
+
+Element < Class < ID < Inline < !important
+
+Position:
+    li {
+        color: red;
+        color: blue;
+    }
+    Final color: blue
+
+Specificity:
+    li {color: blue;}               - element
+    .first-class {color: red;}      - class
+    li[draggable] {color: purple;}  - attribute
+    #first-id {color: orange;}      - id
+
+Type
+    <link rel=stylesheet" href="./styl.css">    - external
+    <style></style>                             - internal
+    <h1 style=" "> Hello </h1>                  - inline
+
+Importance
+    color: red;
+    color: green !important;

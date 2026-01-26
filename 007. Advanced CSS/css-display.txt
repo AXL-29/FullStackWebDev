@@ -1,0 +1,70 @@
+CSS Display
+
+The display property controls how an element is rendered on the page
+and how it interacts with other elements. It's one of the most important CSS properties for layout.
+
+Common display Values
+
+1. display: block
+    - Takes full width
+    - Starts on a new line
+
+    Behavior:
+    - Width & height work
+    - Margin & padding work on all sides
+
+    Think: Big boxes stacked vertically
+
+2. display: inline
+    - Takes only the content width
+    - Stays on the same line
+
+    Behavior:
+    - Width & height don't work
+    - Top & bottom margin ignored.
+
+    Think: Text-like elements
+
+3. display: inline-block
+    - Stays inline
+    - Accept width, height, margin, padding
+
+    Use when:
+    - buttons
+    - badges
+    - inline cards
+
+    Think: Inline but box-styled
+
+4. display: none
+    - Element is completely removed from layout.
+    - No space occupied
+
+    Different from visibility: hidden
+    - hidden = invisible but still takes space.
+
+5. display: flex
+    - Used for 1-dimensional layouts (row OR column)
+
+    Key abilities:
+    - Align items horizontally & vertically
+    - Control spacing easily
+
+    Common properties:
+    - justify-content
+    - align-items
+    - flex-direction
+
+    Think: Flexible row or column layout
+
+6. display: grid
+    - Used for 2-dimensional layout (rows AND columns)
+
+    Power features:
+    - Precise layout control
+    - Complex designs made simple
+
+    Think: Table-like but modern and responsive
+
+7. display: table (less common)
+    - Mimics table behavior without using <table>

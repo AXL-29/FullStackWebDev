@@ -1,0 +1,64 @@
+What is CSS float?
+
+The float property is used to push an element to the left or right of its container,
+allowing text or inline elements to wrap around it.
+
+It was originally designed to wrapping text around images, not for full page layout.
+
+Basic Values
+    - float: left;
+    - float: right;
+    - float: none; (default)
+
+How float Works
+When an element is floated:
+    - It is taken out of the normal document flow
+    - It moves to the left or right
+    - Other content wraps around it
+
+    Think of a newspaper image with text flowing beside it.
+
+Common Use Case (Classic)
+Image floating inside text:
+
+    img {
+        float: left;
+        margin-right: 10px;
+    }
+
+    Result:
+    - Image stick to the left
+    - Text wraps around the image
+
+Problem with float (Important)
+1. Parent Collapse
+    - A floated element does not increase the height of its parent.
+    - This causes layout breaking.
+
+2. Clearing Floats
+    - To fix the collapse, you use clear.
+
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+clear Property
+Used to stop elements from wrapping around floats.
+
+    - clear: left;
+    - clear: right;
+    - clear: both;
+
+Why float is NOT recommended for layout today.
+    - hard to manage
+    - breaks layout easily
+    - requires clearfix hacks
+
+    Fleaxbox and Grid replaced it.
+
+When should you still use float?
+    - Text wrapping around images.
+    - Legacy projects
+    - Very simple alignment cases.

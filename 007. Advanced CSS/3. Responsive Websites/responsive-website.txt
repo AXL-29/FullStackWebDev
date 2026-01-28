@@ -1,0 +1,93 @@
+How to create a responsive website
+
+A responsive website adapts smoothly to different screen sizes (mobile, tablet, desktop). 
+in modern CSS, this is a must-have skill.
+
+1. Use a mobile-first approach
+    - Start designing for small screens first, then scale up.
+
+    Why?
+
+    - Mobile users are the majority.
+    - Easier to add features than remove them.
+
+    /* Mobile default */
+    body {
+        font-size: 16px;
+    }
+
+2. Use Flexible Layouts (Flexbox & Grid)
+    Flexbox (1D Layouts)
+    .container {
+        display: flex;
+        flex-wrap: wrap ;
+    }
+
+    Grid(2D Layouts)
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    These automatically adjust based on screen width.
+
+3. Use responsive unit (NOT fixed pixels)
+
+    Avoid:
+    width: 500px
+
+    Use:
+    width: 100px
+    max-width: 1200px;
+
+    Best units:
+    - % -> relative to parent
+    - vw, vh -> viewport based
+    - rem, em -> scalable typography
+
+4. Media Queries (Core of Responsiveness)
+    Media queries apply style based on screen size.
+
+    @media (min-width: 768px) {
+        .container {
+            display: flex;
+        }
+    }
+
+    Common Breakpoint (Guide)
+
+    Device              Width
+    Mobile              < 768px
+    Tablet              >= 768px
+    Desktop             >= 1024px
+
+5.  Responsive Images
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    Prevents iamges from overflowing their containers.
+
+6. Use the viewport meta tag (Very Important)
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    Without this,  mobile responsiveness will not work properly.
+
+7. Avoid Old Techniques
+
+    Don't Use:
+    - float for layouts
+    - fixed-width container
+    - tables for page structure
+
+8. Test on Multiple screens
+    
+    Use:
+    - Browser DevTools (responsive mode)
+    - Resize the browser window
+    - Real mobile devices if possible
+
+    

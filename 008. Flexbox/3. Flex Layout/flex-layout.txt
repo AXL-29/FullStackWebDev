@@ -102,3 +102,14 @@ Easy memory trick
     - justify = main direction
     - align   = cross direction
     - wrap    = next line or not
+
+4. align-self
+    - align-self lets ONE flex item control its own alignment, overriding the container's align-items
+
+    Common Values:
+    - auto (default)    -> follows align-items
+    - flex-start        -> align to start
+    - center            -> center itself
+    - flex-end          -> align to end
+    - stretch           -> stretch itself
+    - baseline          -> align text baseline

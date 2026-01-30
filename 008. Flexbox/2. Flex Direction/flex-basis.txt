@@ -1,0 +1,58 @@
+flex-basis - defines the initial size of a flex item before any growing or shrinking happens.
+
+Think of it as:
+    "How big should this item start?"
+
+What flex-basis really does
+    - It sets the default width or height of a flex-direction:
+    - Which one it affects depends on flex-direction:
+        - row       ->  affects width
+        - column    ->  affects height
+
+    So:
+    - row       -> flex-basis = width
+    - column    -> flex-basis = height
+
+    Common values
+    - auto (default)
+        - Size is based on content or width / height
+    - px, %, em, etc.
+        - Example: 200px
+    - 0
+        - Ignore content size, distribute space evenly.
+
+    Example Scenario (no code)
+    Imagine 3 boxes in a row:
+        - Box A = flex-basis: 100px
+        - Box B = flex-basis: 200px
+        - Box C = flex-basis: 300px
+
+    Before any resizing:
+        - Box C starts the largest
+        - Box A starts the smallest
+
+    Then:
+        - flex-grow decides how extra space is shared
+        - flex-shrink decides how space is reduced
+
+    flex-basis vs width
+    
+    Important difference:
+    - flex-basis overrides width when Flexbox is active
+    - Flexbox sizing logic uses flex-basis first
+
+    Rule of thumb:
+    - If you're using Flexbox, prefer flex-basis over width
+
+    Relationship with flex shorthand
+    Most of the time you'll see:
+
+    flex: grow shrink basis;
+
+    Example:
+    flex: 1 1 200px
+
+    Meaning:
+    - Start at 200px
+    - Can grow
+    - Can shrink

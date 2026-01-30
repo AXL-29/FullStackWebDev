@@ -1,0 +1,66 @@
+What is flex-direction?
+
+flex-direction controls the direction in which flex items are laid out insidie a flex container.
+it decides where items start, when they go, and what the main axis is.
+
+The 4 values of flex-direction
+
+1.  row (default)
+    - Items go left -> right
+    - Main axis: horizontal
+    - Cross axis: vertical
+    
+    This is what happens automatically after display: flex;
+
+2. row-reverse
+    - Items go right -> left
+    - Main axis is still horizontal
+    - Order is reverse
+
+    Visual order changes, HTML order does not.
+
+3. column
+    - Items go top -> bottom
+    - Main axis: vertical
+    - Cross axis: horizontal
+
+    Common for:
+    - Sidebars
+    - Vertical menus
+    - Forms
+
+4. column-reverse
+    - Items go bottom -> top
+    - Main axis is vertical
+    - Order is reversed
+
+Visual summary
+Value	        Direction	    Main Axis
+row	                →	        Horizontal
+row-reverse	        ←	        Horizontal
+column	            ↓	        Vertical
+column-reverse  	↑	        Vertical
+
+Why flex-direction is important
+It affects:
+    - justify-content (works on the main axis)
+    - align-items (works on the cross axis)
+
+Example:
+    - row -> justify-content = horizontal alignment
+    - column -> justify-content = vertical alignment
+
+    This is where beginners usually get confused
+
+Easy way to remember
+    flex-direction = "Which way do my items flow?"
+
+    row = across
+    column = down
+
+Pro Tip:
+    If you want to:
+    - Center vertically -> use column
+    - Center horizontally -> use row
+
+    Then apply justify-content and align-items accordingly.

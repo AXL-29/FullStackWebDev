@@ -113,3 +113,26 @@ Easy memory trick
     - flex-end          -> align to end
     - stretch           -> stretch itself
     - baseline          -> align text baseline
+
+5. align-content
+    - controls the spacing between rows or column of flex items, not the items themselves.
+
+    Very Important  Rule!
+    - align-content ONLY works when:
+        - flex-wrap: wrap (or wrap-reverse)
+        - There are multiple lines of items
+
+    If items are on one line, align-content does nothing.
+
+    What axis does it affect?
+    - Works on the cross axis
+    - Similar to justify-content, but for lines, not items.
+
+    Common Values
+    - flex-start        -> lines packed at start
+    - center            -> lines centered
+    - flex-end          -> lines packed at end
+    - space-between     -> space between lines
+    - space-around      -> space around lines
+    - space-evenly      -> equal spacing
+    - stretch (default) -> lines stretch to fill container 

@@ -1,0 +1,104 @@
+Flex Layout (Flexbox)
+
+A flex layout (also called Flexbox) is a CSS layout system used to arrange, align, and
+distribute  space among items inside a container in one direction at a time (row or column).
+
+It makes layout responsive, flexible, and much easier than older methods like float.
+
+Core idea of Flex Layout
+Flex layout works using:
+    - Flex container -> the parent element
+    - Flex items -> the direct children
+
+When you set:
+
+    display: flex;
+
+    You activate the flex layout.
+
+What Flex Layout is good at
+    - Lining items horizontally or vertically
+    - Centering elements (both directions)
+    - Controlling spacing between items
+    - Making layouts adapt to screen size
+    - Building UI components (navbars, cards, forms)
+
+How Flex Layout works (conceptually)
+    1. Items follow main axis
+        - Controlled by flex-direction
+    2. Items align across a cross axis
+    3. Space is distributed automatically
+    4. Items can grow or shrink as needed.
+
+Common Properties
+1. justify-content (JUSTIFY)
+    - Controls spacing and alignment on the MAIN axis
+    - The main axis depends on flex-direction
+
+    Common Values:
+        - flex-start    - items at the start
+        - center        - items centered
+        - flex-end      - items at the end
+        - space-between - space between items
+        - space-around  - space around items
+        - space-evenly  - equal space everywhere
+
+        If flex-direction: row;
+        -> justify-content works horizontally
+
+        If flex-direction: column;
+        -> justify-content works vertically
+
+2. align-items (ALIGN)
+    - Controls alignment on the CROSS axis
+    - Cross axis is always perpendicular to the main axis
+
+    Common Values:
+        - stretch(default)      - items stretch to fill
+        - center                - center items
+        - flex-start            - align to start
+        - flex-end              - align to end
+        - baseline              - align text baselines
+
+        If flex-direction: row
+        -> align-items works vertically
+
+        If flex-direction: column
+        -> align-items works horizontally
+
+3. flex-wrap (WRAP)
+    - Conrols whether items stay on one line or move to a new line
+
+    Values:
+    - nowrap(default)   - single line
+    - wrap              - items move to next line
+    - wrap-reverse      - wrap but reversed order
+
+    Useful for:
+    - Responsive cards
+    - Navigation menus
+    - Grids without Grid
+
+How they work together
+
+Assume:
+    - flex-direction: row
+
+    | Property          | Controls     |
+    | ----------------- | ------------ |
+    | `justify-content` | Left ↔ Right |
+    | `align-items`     | Up ↕ Down    |
+    | `flex-wrap`       | New lines    |
+
+Change to:
+    - flex-direction
+
+    | Property          | Controls     |
+    | ----------------- | ------------ |
+    | `justify-content` | Up ↕ Down    |
+    | `align-items`     | Left ↔ Right |
+
+Easy memory trick
+    - justify = main direction
+    - align   = cross direction
+    - wrap    = next line or not

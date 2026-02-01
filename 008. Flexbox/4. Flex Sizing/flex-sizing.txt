@@ -1,0 +1,48 @@
+Flex Sizing is how Flexbox decides how big each flex item should be inside a flex container.
+
+The 3 properties that control the flex sizing
+1. flex-basis -> starting size
+    - The item's initial size before space is distributed
+    - In row -> width
+    - In column -> height
+
+2. flex-grow -> grow if there's extra space
+    - Controls how much an item expands
+    - 0 -> don't grow
+    - 1 -> grow equally
+    - 2 -> grow twice as much
+
+3. flex-shrink -> shrink if space is tight
+    - Controls how much an item shrinks
+    - 1 -> shrink normally (default)
+    - 0 -> don't shrink
+
+The flex shorthand (very common)
+Most layouts use:
+
+    flex: grow shrink basis;
+
+Example:
+
+    flex: 1 1 200px
+
+Meaning:
+- Start at 200px
+- Can grow
+- Can shrink
+
+How flex sizing works (step-by-step)
+    1. Browser looks at flex-basis
+    2. Compares total item size with container size
+    3. Extra space -> distributed using flex-grow
+    4. Not enough space -> reduce using flex-shrinks
+
+flex-sizing vs width / height
+
+| Property           | Flex sizing |
+| ------------------ | ----------- |
+| `width` / `height` | Fixed       |
+| `flex-basis`       | Flexible    |
+| `flex-grow/shrink` | Adaptive    |
+
+

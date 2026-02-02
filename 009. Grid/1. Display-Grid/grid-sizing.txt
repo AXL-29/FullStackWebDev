@@ -1,0 +1,82 @@
+Grid sizing is how you control the size of rows and columns in CSS Grid
+
+In short: it defines how big each grid track is.
+
+What "grid sizing" means
+    When you create a grid, you define tracks:
+    - columns   -> grid-template-columns
+    - rows      -> grid-template-rows
+
+    Grid sizing answers:
+        How wide is each column? How tall is each row?
+
+Main grid sizing unit (very important)
+
+1. px - fixed size
+
+    grid-template-columns: 200px 400px;
+
+    - Exact size
+    - Not responsive
+
+2. % - relative to container
+
+    grid-template-columns: 50% 50%;
+
+3. fr - fractional unit (Grid's superpower)
+
+    grid-template-columns: 1fr 2fr;
+
+    means:
+        - Split available space
+        - 1 part vs 2 parts
+
+        -> fr ignores content size unless constrained.
+
+4. auto - size based on content
+
+    grid-template-columns: auto 1fr;
+
+    - auto = content width
+    - 1fr = remaining space
+
+5. minmax() - flexible limits
+
+    grid-template-columns: minmax(200px, 1fr)
+
+    means:
+        - Minimum: 200px
+        - Maximum: 1fr
+
+        -> extremely important for responsive layouts
+
+Grid sizing functions (you'll see these a lot)
+
+1. repeat()
+
+    grid-template-columns: repeat(3, 1fr);
+
+2. auto-fit / auto-fill
+
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+
+Row sizing (special note)
+    
+    Rows behave differently than columns:
+
+        grid-template-rows: 1fr;
+
+    Rows don't stretch unless the container has a height
+    
+    Common fix:
+
+        .container {
+            height: 100vh
+        }
+
+Grid sizing priority (important concept)
+    Grid decides sizes in this order:
+    
+    1. Fixed sizes (px)
+    2. Content-based (auto)
+    3. Flexible (fr)

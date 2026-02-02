@@ -80,3 +80,12 @@ Grid sizing priority (important concept)
     1. Fixed sizes (px)
     2. Content-based (auto)
     3. Flexible (fr)
+
+Shorthand grid-template syntax
+
+Rows / Columns
+
+    grid-template: 1fr 2fr / 1fr 3fr
+
+    - Left of / -> rows
+    - Right of / -> columns

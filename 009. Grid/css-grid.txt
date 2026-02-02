@@ -1,0 +1,28 @@
+CSS Grid is a powerful two-dimensional layout system for building row and columns with precision
+
+display: grid;
+tells the browser: "This element is now a Grid container"
+
+Once you set this, all direct children become Grid items, and you can control their layout using rows and columns.
+
+What it enables
+With display: grid;, you can:
+    - Create rows and columns
+    - Control spacing both horizontally and vertically
+    - Precisely place items anywhere in the layout
+
+Example (Conceptually)
+    - The container -> grid
+    - Children -> arranged into cells
+    - You decide:
+        - how many columns
+        - how tall rows are
+        - how much gap exist between items.
+
+Common Grid properties used after this
+    - grid-template-columns -> define column structure
+    - grid-template-rows    -> define row structure
+    - gap   -> space between grid items
+    - justify-items / align-items -> alinment inside cells
+
+    -> Think of Grid like a table you fully control with CSS but way more flexible.

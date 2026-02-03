@@ -1,0 +1,14 @@
+What is grid placement?
+
+Grid placement is how you decide where a grid item sits inside the grid:
+    - which row
+    - which column
+    - how many cells it spans
+
+    Instead of items flowing automatically, you place them intentionally.
+
+    1. Automatic placement (default)
+
+    .container {
+        
+    }

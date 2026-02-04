@@ -7,8 +7,79 @@ Grid placement is how you decide where a grid item sits inside the grid:
 
     Instead of items flowing automatically, you place them intentionally.
 
-    1. Automatic placement (default)
+    Automatic placement (default)
 
     .container {
-        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
+
+    Items fill the grid left -> right, top -> bottom
+
+    Manual grid placement (core properties)
+    1. grid-column
+        - Controls horizontal placement
+
+        .item {
+            grid-column: 1/3;
+        }
+
+        Meaning:
+        - Start at column line 1
+        - End at column line 3
+        - Span 2 columns
+
+    2. grid-row
+        - Controls vertical placement
+
+        .item {
+            grid-row: 1/2;
+        }
+
+    3. Start / End syntax
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        Same as:
+        grid-column: 1/3;
+
+    
+    Using span (very common)
+
+        .item {
+            grid-column: span 2;
+        }
+
+        Takes up 2 columns wheree from where I start.
+
+    Negative line numbers
+        .item {
+            grid-column: 1/ -1;
+        }
+
+        Means:
+            - From first line
+            - To last line
+            - Great for full-width elements.
+
+    Named areas (visual placement)
+        grid-template-areas:
+            "header header"
+            "sidebar main";
+        
+        header {
+            grid-area: header;
+        }
+
+        No numbers - just names.
+
+    Overlapping items (yes, allowed)
+
+    .item1 {
+        grid-column: 1 / 3;
+        grid-row: 1/2;
+    }
+
+    Items can overlap if you place them on the same cells.
+
+    

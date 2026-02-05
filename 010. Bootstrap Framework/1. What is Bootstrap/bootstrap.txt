@@ -1,0 +1,109 @@
+What is Bootstrap?
+
+Bootstrap is a CSS framework (with optional JavaScript) that helps you build responsive, mobile-first websites faster.
+
+Instead of writing tons of CSS from scratch, Bootstrap gives you:
+    - Pre-made classes
+    - A grid system
+    - Ready-to-use components (buttons, navbars, cards, modals, etc.)
+
+    -> You mostly write HTML + class names, not custom CSS.
+
+Why use Bootstrap?
+    - Faster development
+    - Responsive by default
+    - Consistent design
+    - Beginner-friendly
+    - Less CSS to maintain
+
+Bootstrap is mainly made of:
+    1. Grid System
+    2. Utility Classes
+    3. Components
+    4. JavaScript Plugins
+
+Let's go one by one
+
+1. Bootstrap Grid System
+    - Bootstrap uses a 12-column grid.
+
+    Core idea:
+        - Rows contain columns
+        - Columns decide width
+
+    Example Logic:
+        - 12 columns    = full width
+        - 6 columns     = half
+        - 4 columns     = one-third
+
+    Responsive sizes:
+        - col- (extra-small)
+        - col-sm- (small)
+        - col-md- (medium)
+        - col-lg- (large)
+        - col-xl-  (extra large)
+
+    So layouts automatically adapt to screen size.
+
+2. Utility Classes
+    - There are small helper classes that replace common CSS rules.
+
+    Examples of what they control:
+        - Spacing (margin, padding)
+        - Text alignment
+        - Colors
+        - Display (flex, none, block)
+        - Width & height
+
+    Instead of writing CSS like:
+        - margin-top: 16px;
+
+    You just add a class.
+
+3. Bootstrap Components
+    - Pre-built UI pieces you can drop in instantly:
+        - Buttons
+        - Cards 
+        - Navbars 
+        - Forms 
+        - Alerts 
+        - Modals 
+        - Dropdowns 
+        - Pagination 
+
+    They are:
+        - Styled
+        - Responsive
+        - Accessible
+
+    You can customize them later with your own CSS.
+
+4. Bootstrap JavaScript
+    Some components need JS to work:
+        - Modals
+        - Dropdowns
+        - Carousels
+        - Tooltips
+    
+    Bootstrap handles the logic for you, - you just activate them.
+
+Mobile-First Design
+    Bootstrap is mobile-first by default.
+
+    That means:
+        - Styles apply to small screens first
+        - Large screen override when needed
+    This is why responsive classes exist (md, lg, etc.)
+
+    When SHOULD you use Bootstrap?
+        - Prototypes
+        - Dashboards
+        - Admin panels
+        - Fast MVPs
+        - Beginners learning layout & responsiveness
+
+    When NOT to use Bootstrap?
+        - If you want a very unique design
+        - If file size is critical
+        - If you already mastered CSS framework like Tailwind
+

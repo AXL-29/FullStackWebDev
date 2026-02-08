@@ -1,0 +1,47 @@
+What is a Bootstrap Layout?
+
+    - A bootstrap layout is the structure of your page built using Bootstrap's grid system,
+    containers, rows, and columns so your automatically adapts to different screen sizes.
+
+    The 4 main parts of a Bootstrap Layout
+
+    1. Container
+        The outer wrapper of your page.
+
+        Two types:
+        - container -> fixed width (changes per screen size)
+        - container-fluid -> full width (100% of screen)
+
+    2. Row
+        Rows are used to group columns horizontally.
+
+        Rules:
+            - Rows go inside containers
+            - columns go inside rows
+            - Rows help align columns properly
+    
+    3. Columns
+        Columns control width
+
+        Key Idea:
+        - Bootstrap uses 12 columns per row
+        - You divide those 12 to create layouts
+
+        Example (conceptually):
+        - 12 -> full width
+        - 6 + 6 -> two equal columns
+        - 4 + 4 + 4 -> three equal columns
+
+        Columns are responsive, meaning they change sizes depending on screen size.
+
+    4. Breakpoints (Responsive behavior)
+        - Bootstrap layouts change based on screen size.
+
+        Breakpoints:
+        - Extra small (phones)
+        - Small (tablets)
+        - Medium (laptops)
+        - Larg (desktops)
+        - Extra large (big screens)
+
+        You control when layout changes using these.

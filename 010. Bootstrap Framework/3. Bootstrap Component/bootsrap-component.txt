@@ -1,0 +1,120 @@
+What are Bootstrap Components?
+    Bootstrap components are pre-styled, reusable UI elements built with HTML, CSS, and sometimes JavaScript.
+
+Main Bootstrap Components
+1. Buttons
+    - Used for actions (submit, save, cancel).
+
+    Common ideas:
+        - Different colors (primary, success, danger, etc.)
+        - Different sizes
+        - Disabled states
+
+2. Navbar
+    - Used for navigation (top menu)
+
+    Features:
+        - Brand/Logo
+        - Links
+        - Dropdowns
+        - Collapsible menu for mobile
+
+3. Cards
+    - Used to group content.
+
+    Inside a card you can put:
+        - Text
+        - Images
+        - Buttons
+        - Lists
+
+4. Forms 
+    - Styled input fields
+
+    Includes:
+        - Text input
+        - Email
+        - Password
+        - Select
+        - Checkbox
+        - Radio
+        - Validation
+
+5. Alerts
+    - Used for messages
+
+    Examples:
+        - Success message
+        - Warning
+        - Error
+    
+    Can be:
+        - Static
+        - Dismissible (close button)
+
+6. Modal
+    - A popup window
+
+    Used for:
+        - Login Forms
+        - Confirm actions
+        - Extra information
+
+7. Dropdown
+    - A toggable menu
+
+    Common in:
+        - Navbar
+        - Action menus
+    
+    Requires JavaScript
+
+8. Carousel
+    - Slideshow component.
+
+    Used for:
+        - Image slider
+        - Featured content
+
+9. List Group
+    - Styled lists
+
+    Used for:
+        - Menus
+        - Sidebars
+        - Notifications
+
+10. Badges
+    - Small labels
+
+    Used for:
+        - Notifications count
+        - Status indicators
+
+11. Pagination
+    - Used to navigate pages
+
+    Common in:
+        - Tables
+        - Search results
+
+12. Breadcrumb
+    - Shows page hierarchy
+
+    Example idea:
+        Home -> Products -> Item
+
+13. Progress Bar
+    - Shows progress visually
+
+    Used for:
+        - Loading
+        - Completion status
+
+14. Accordion
+    - Expandable/collapsible content
+
+    Used for:
+        - FAQs
+        - Hidden details
+        

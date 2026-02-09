@@ -1,0 +1,18 @@
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+
+.feature-icon > img {
+    width: 1em;
+    height: 1em;
+}
+
+.icon-link > .bi {
+    flex-shrink: 0;
+    width: 1em;
+    height: 1em;
+    fill: currentcolor;
+    transition: .2s ease-in-out transform;
+}

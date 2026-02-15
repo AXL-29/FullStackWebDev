@@ -1,0 +1,80 @@
+Typography is the art and technique of arranging text so it is readable, clear, and visually appealing on website.
+
+In web design, typography affects:
+    - Readability
+    - User experience
+    - Branding
+    - Professional look
+
+1. What is a Font vs Typeface?
+    - Typeface -> The design of the letters (e.g., Arial, Times New Roman)
+    - Font -> The variation of a typeface (bold, italic, 16px, etc.)
+
+    Example:
+    Arial Bold 18px is a font of the Arial typeface
+
+2. Main Font Categories
+    
+    Serif
+    - Has small decorative strokes (feet)
+    - Example: Times New Roman
+    - Feels: Traditional, formal
+
+    Sans-Serif
+    - No decorative strokes
+    - Example: Helvetica
+    - Feels: Modern, clean (most websites use this)
+
+    Monospace
+    - Every letter has equal width
+    - Example: Courier New
+    - Used for code
+
+    Script
+    - Looks like handwriting
+    - Elegant or decorative
+
+3. Important Typography Properities in CSS
+    Font Size
+    - Controls text size
+
+    Best practice:
+        - Body text: 16px minimum
+        - Headings: Larger for hierarchy
+
+    Font Weight
+        - 400 -> normal
+        - 700 -> Bold
+
+    Line Height
+        - Controls spacing between lines
+    
+    Recommended: 1.5 for body text
+
+    Letter spacing
+        - Space between letters
+
+4. Typography Hierarchy
+    - Hierarchy guides users on what to read first
+
+    Example Structure:
+
+    - H1 -> Main Title
+    - H2 -> Section Title
+    - H3 -> Subsection
+    - Paragraph -> Body text
+
+    Good hierarchy = clean and organized design
+
+5. Typography Best Practices for Web Design
+    - Use only 2-3 fonts max
+    - Use sans-serif for modern website
+    - Maintain consistent spacing
+    - Ensure good contrast (dark text on light background)
+    - Don't make text too small
+
+Why typography matters?
+    - Bad typography = website feels unprofessional
+    - Good typography = clean, modern, trustworthy
+
+    Even simple website look premium with proper typography

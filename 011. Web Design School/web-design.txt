@@ -1,0 +1,17 @@
+Web Design is the process of creating the visual layout, structure, and user experience of a website.
+It focuses on how a website looks and how users interact with it.
+
+Main Parts of Web Design
+
+1. Layout
+    - How element (text, images, buttons) are arranged on the page.
+2. Color Scheme
+    - The combination of colors used to make the site attractive and readable.
+3. Typography
+    - The style and appearance of text (fonts, size, spacing)
+4. Images & Graphics
+    - Photos, icons, illustrations, and other visual elements
+5. User Interface (UI)
+    - Buttons, menu, forms - everythinh users interact with.
+6. User Experience (UX)
+    - How easy and smooth it is for users to navigate and use the website.

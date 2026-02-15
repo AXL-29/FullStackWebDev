@@ -1,0 +1,61 @@
+Color Theory is the study of how colros work together and how they affect human emotions, perception, and design.
+
+In web design, colour theory helps you:
+    - Create visually appealing websites
+    - Guide user attention
+    - Improve readability
+    - Influence emotions and decisions
+
+1. The Color Wheel
+    The color wheel is the foundation of color theory. It was developed by Isaac Newton when he organized colors into a circular diagram.
+
+    It has three main types of colors:
+        - Primary Colors
+            - Red
+            - Blue
+            - Yellow
+        These cannot be created by mixing other colors.
+
+        - Secondary Colors
+            - Green (Blue + Yellow)
+            - Orange (Red + Yellow)
+            - Purple (Red + Blue)
+
+        - Tertiary Colors
+            - Made by mixing primary + secondary colors.
+
+2. Color Harmonies (Color Combinations)
+    These are balanced combination of colors:
+        
+        Complementary
+            - Color opposite each other on the wheel
+            - Example: Blue & Orange
+            - High contrast (great for buttons)
+
+        Analogous
+            - Colors next to each other
+            - Example: Blue, Blue-Green, Green
+            - Soft and harmonious
+
+        Triadic
+            - Three evenly spaced colors
+            - Example: Red, Blue, Yellow
+            - Balanced but vibrant
+
+3. Warm vs Cool Colors
+    
+    Warm Colors
+        - Red, Orange, Yellow
+        - Energetic, passionate, exciting
+    
+    Cool Colors
+        - Blue, Green, Purple
+        - Calm, professional, trustworthy
+
+4. Color Physcology in Web Design
+    Colors Influence emotions:
+        - Blue -> Trust, security (banks, tech companies)
+        - Red -> Urgency, passion (sales, promotions)
+        - Green -> Growth, health
+        - Black -> Luxury, elegance
+        - White -> Clean, simple

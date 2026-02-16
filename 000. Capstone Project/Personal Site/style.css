@@ -22,17 +22,17 @@ body {
 
 .heading {
     grid-column: span 2;
-    font-size: 15rem;
+    font-size: clamp(3rem, 15vw, 15rem);
     color: #d3d0cb;
     align-items: center;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .name, .social-media {
     font-family: "Amiro", sans-serif;
     color: #d3d0cb;
-    font-size: 1.2rem;
+    font-size: clamp(0.5rem, 15vw, 1rem);
 }
 
 .social-media {

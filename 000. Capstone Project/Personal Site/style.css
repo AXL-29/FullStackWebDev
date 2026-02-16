@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #232020;
+    font-family: "League Gothic", sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+.heading {
+    grid-column: span 2;
+    font-size: 15rem;
+    color: #d3d0cb;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.name, .social-media {
+    font-family: "Amiro", sans-serif;
+    color: #d3d0cb;
+    font-size: 1.2rem;
+}
+
+.social-media {
+    text-align: right;
+}

@@ -8,6 +8,11 @@ body {
     font-family: "League Gothic", sans-serif;
 }
 
+p {
+    font-family: "Amiro", sans-serif;
+    color: #d3d0cb;
+}
+
 .flex-container {
     display: flex;
     justify-content: center;
@@ -20,6 +25,16 @@ body {
     grid-template-rows: auto;
 }
 
+.circle {
+    position: absolute;
+    z-index: 1;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+
 .heading {
     grid-column: span 2;
     font-size: clamp(3rem, 15vw, 15rem);
@@ -30,8 +45,6 @@ body {
 }
 
 .name, .social-media {
-    font-family: "Amiro", sans-serif;
-    color: #d3d0cb;
     font-size: clamp(0.5rem, 15vw, 1rem);
 }
 

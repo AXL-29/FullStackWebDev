@@ -25,15 +25,33 @@ p {
     grid-template-rows: auto;
 }
 
-.circle {
+.blob {
     position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
+    top: 5rem;
+    left: 35rem;
+    z-index: -1;
+    overflow: hidden;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
     background-color: red;
+    animation: morph 3.75s linear infinite;
 }
 
+@keyframes morph {
+    0%,
+    100% {
+        border-radius: 42% 56% 72% 28% / 42% 42X 56% 48%;
+    }
+
+    33% {
+        border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+    }
+
+    66% {
+        border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+    }
+}
 
 .heading {
     grid-column: span 2;
@@ -44,7 +62,8 @@ p {
     margin-top: 5rem;
 }
 
-.name, .social-media {
+.name,
+.social-media {
     font-size: clamp(0.5rem, 15vw, 1rem);
 }
 

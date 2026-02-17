@@ -73,3 +73,13 @@ p {
 .social-media {
     text-align: right;
 }
+
+.flex-container.introduction {
+    flex-direction: column;
+    margin: 0;
+}
+
+.introduction > img {
+    height: 10rem;
+    overflow: hidden;
+}

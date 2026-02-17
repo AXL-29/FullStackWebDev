@@ -11,7 +11,7 @@ body {
 }
 
 p {
-    font-family: "Arimo", sans-serif; /* Corrected to match Google Fonts */
+    font-family: "Arimo", sans-serif;
     color: #d3d0cb;
 }
 
@@ -80,6 +80,14 @@ p {
 }
 
 .introduction > img {
-    height: 10rem;
+    position: relative;
+    margin-top: -15rem;
+    width: 50rem;
     overflow: hidden;
+}
+
+.sub-heading {
+    position: absolute;
+    font-size: 10rem;
+    color: #d3d0cb;
 }

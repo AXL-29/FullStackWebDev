@@ -89,3 +89,8 @@ p {
 .social-media {
     text-align: right;
 }
+
+.intro-photo {
+    height: 2rems;
+    width: 3rem;
+}

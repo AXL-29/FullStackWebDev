@@ -1,93 +1,92 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #232020;
-    font-family: "League Gothic", sans-serif;
-    color: #d3d0cb;
+  background-color: #232020;
+  font-family: "League Gothic", sans-serif;
+  color: #d3d0cb;
 }
 
 p {
-    font-family: "Arimo", sans-serif;
-    color: #d3d0cb;
+  font-family: "Arimo", sans-serif;
+  color: #d3d0cb;
 }
 
 .flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    gap: 1rem;
-    position: relative;
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
+  position: relative;
 }
 
 .blob {
-    position: absolute;
-    top: 8vh;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-    width: 40vw;
-    height: 40vw;
-    max-width: 35rem;
-    max-height: 35rem;
-    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
-    background-color: red;
-    animation: morph 3.75s linear infinite;
-    overflow: hidden;
+  position: absolute;
+  top: 8vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  width: 40vw;
+  height: 40vw;
+  max-width: 35rem;
+  max-height: 35rem;
+  border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  background-color: red;
+  animation: morph 3.75s linear infinite;
+  overflow: hidden;
 }
 
 @keyframes morph {
-    0%, 100% {
-        border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
-    }
-    33% {
-        border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
-    }
-    66% {
-        border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
-    }
+  0%,
+  100% {
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  }
+  33% {
+    border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+  }
+  66% {
+    border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+  }
 }
 
 .heading {
-    grid-column: 1 / -1;
-    font-size: clamp(3rem, 15vw, 15rem);
-    text-align: center;
-    margin-top: 5rem;
+  grid-column: 1 / -1;
+  font-size: clamp(3rem, 15vw, 15rem);
+  text-align: center;
+  margin-top: 5rem;
 }
 
 .name,
 .social-media {
-    font-size: clamp(0.5rem, 5vw, 2rem);
+  font-size: clamp(0.5rem, 5vw, 2rem);
 }
 
 .social-media {
-    text-align: right;
+  text-align: right;
 }
 
-.flex-container.introduction {
+.introduction-container {
+    display: flex;
     flex-direction: column;
-    margin: 0;
-}
-
-.introduction > img {
+    justify-content: center;
+    align-items: center;
     position: relative;
-    margin-top: -15rem;
-    width: 50rem;
-    overflow: hidden;
+    margin-top: 2rem;
 }
 
-.sub-heading {
-    position: absolute;
-    font-size: 10rem;
-    color: #d3d0cb;
+.self-photo img {
+    width: 30%;
+    height: auto;
 }

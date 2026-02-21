@@ -29,11 +29,13 @@ p {
 /* ===== HOME SECTION (retain original size) ===== */
 
 #home {
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
+
 
 .home-container {
   display: grid;
@@ -93,7 +95,10 @@ p {
 
 .name,
 .social-media {
-  font-size: clamp(0.5rem, 5vw, 2rem);
+  font-size: clamp(0.8rem, 2vw, 2rem);
+  white-space: nowrap;       /* prevents wrapping */
+  overflow: hidden;          /* prevents overflow */
+  text-overflow: ellipsis;   /* optional: adds ... if too long */
 }
 
 .social-media {
@@ -124,7 +129,7 @@ p {
 /* Large centered heading */
 
 .intro-text h2 {
-  font-size: clamp(10rem, 12vw, 14rem);
+  font-size: clamp(3rem, 12vw, 10rem);
   line-height: 1;
 }
 
@@ -132,7 +137,7 @@ p {
 /* Description text */
 
 .intro-text p {
-  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-size: clamp(1rem, 2vw, 2rem);
   max-width: 800px;
 }
 

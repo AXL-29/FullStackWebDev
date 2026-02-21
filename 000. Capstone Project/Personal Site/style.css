@@ -1,8 +1,13 @@
+/* ===== RESET ===== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+/* ===== GLOBAL ===== */
 
 body {
   background-color: #232020;
@@ -18,19 +23,27 @@ p {
 .flex-container {
   display: flex;
   flex-direction: column;
+}
+
+
+/* ===== HOME SECTION (retain original size) ===== */
+
+#home {
+  min-height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  min-height: 100vh;
 }
 
 .home-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: auto;
   gap: 1rem;
   position: relative;
 }
+
+
+/* retain your original blob size */
 
 .blob {
   position: absolute;
@@ -38,28 +51,38 @@ p {
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
+
   width: 40vw;
   height: 40vw;
+
   max-width: 35rem;
   max-height: 35rem;
+
   border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+
   background-color: red;
+
   animation: morph 3.75s linear infinite;
-  overflow: hidden;
 }
 
 @keyframes morph {
-  0%,
-  100% {
+
+  0%,100% {
     border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
   }
+
   33% {
     border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
   }
+
   66% {
     border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
   }
+
 }
+
+
+/* retain your original large heading */
 
 .heading {
   grid-column: 1 / -1;
@@ -77,16 +100,50 @@ p {
   text-align: right;
 }
 
-.introduction-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 2rem;
+
+/* ===== INTRODUCTION SECTION ===== */
+
+#introduction {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.self-photo img {
-    width: 30%;
-    height: auto;
+.introduction-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+  width: 100%;
 }
+
+
+/* Large centered heading */
+
+.intro-text h2 {
+  font-size: clamp(10rem, 12vw, 14rem);
+  line-height: 1;
+}
+
+
+/* Description text */
+
+.intro-text p {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  max-width: 800px;
+}
+
+
+/* Image covering at least 40% of screen */
+
+.self-photo img {
+  width: 40vw;
+  min-width: 300px;
+  max-width: 600px;
+  height: auto;
+  border-radius: 20px;
+}
+

@@ -26,7 +26,7 @@ p {
 }
 
 
-/* ===== HOME SECTION (retain original size) ===== */
+/* ===== HOME SECTION ===== */
 
 #home {
   min-height: 100svh;
@@ -36,16 +36,12 @@ p {
   padding: 2rem;
 }
 
-
 .home-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   position: relative;
 }
-
-
-/* retain your original blob size */
 
 .blob {
   position: absolute;
@@ -61,14 +57,12 @@ p {
   max-height: 35rem;
 
   border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
-
   background-color: red;
 
   animation: morph 3.75s linear infinite;
 }
 
 @keyframes morph {
-
   0%,100% {
     border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
   }
@@ -80,25 +74,21 @@ p {
   66% {
     border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
   }
-
 }
-
-
-/* retain your original large heading */
 
 .heading {
   grid-column: 1 / -1;
   font-size: clamp(3rem, 15vw, 15rem);
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .name,
 .social-media {
   font-size: clamp(0.8rem, 2vw, 2rem);
-  white-space: nowrap;       /* prevents wrapping */
-  overflow: hidden;          /* prevents overflow */
-  text-overflow: ellipsis;   /* optional: adds ... if too long */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .social-media {
@@ -118,37 +108,34 @@ p {
 .introduction-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 3rem;
   text-align: center;
-  width: 100%;
 }
 
+/* IMAGE */
 
-/* Large centered heading */
+.self-photo img {
+  width: 60vw;
+  min-width: 300px;
+  max-width: 900px;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+}
+
+/* HEADING BELOW IMAGE — HALF OVERLAP */
+
+.intro-text {
+  position: relative;
+  transform: translateY(-50%);
+  z-index: 2;
+}
 
 .intro-text h2 {
   font-size: clamp(3rem, 12vw, 10rem);
   line-height: 1;
 }
 
-
-/* Description text */
-
 .intro-text p {
-  font-size: clamp(1rem, 2vw, 2rem);
-  max-width: 800px;
+    margin-top: 1.5rem;
 }
-
-
-/* Image covering at least 40% of screen */
-
-.self-photo img {
-  width: 40vw;
-  min-width: 300px;
-  max-width: 600px;
-  height: auto;
-  border-radius: 20px;
-}
-

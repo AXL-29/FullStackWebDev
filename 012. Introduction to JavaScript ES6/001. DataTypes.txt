@@ -1,0 +1,56 @@
+JavaScript ES6 Data Types
+    - In JavaScript (ES6 and above), there are 8 main data types.
+
+    They are divided into:
+        - Primitive Types (Simple values)
+        - Reference Type (object)
+
+    Primitive Data Types (7 Types)
+        Primitive = stores actual value directly.
+
+    1. Number
+    Represents:
+        - Integers
+        - Decimals
+        - Special values (Infinity, NaN)
+
+        let age = 25;
+        let price = 99.99;
+        let result = 10 / 0;    - Infinity
+
+    2. String
+    Text values.
+
+        let name = "Jade";
+        let message = "Hello ${name};
+    
+    3. Boolean
+    True or False.
+
+    let isOnline = true;
+    let isLoggedIn = false;
+
+    Used in:
+        - Conditions
+        - Comparisons
+        - Logic Operations
+
+    4. Undefined
+    A variable declared but not assigned.
+
+        let x;
+        console.log(x);     - undefined
+    
+    5. Null
+    Represents intentional empty value.
+
+        let selectedUser = null;
+
+        Diffrence:
+        - undefined -> not assigned
+        - null -> intentionally empty
+    
+    6. Symbol (ES6 Feature)
+    Introduced in ES6, creates unique identifiers
+
+        

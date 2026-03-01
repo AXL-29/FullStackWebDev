@@ -5,8 +5,8 @@ JavaScript ES6 Data Types
         - Primitive Types (Simple values)
         - Reference Type (object)
 
-    Primitive Data Types (7 Types)
-        Primitive = stores actual value directly.
+1. Primitive Data Types (7 Types)
+    Primitive = stores actual value directly.
 
     1. Number
     Represents:
@@ -53,4 +53,58 @@ JavaScript ES6 Data Types
     6. Symbol (ES6 Feature)
     Introduced in ES6, creates unique identifiers
 
-        
+        const id1 = Symbol("id");
+        const id2 = Symbol("id");
+
+        Even if description is name, they are unique.
+
+        Used for:
+
+        - Object property keys
+        - Advance programming
+
+    7. Bight (ES11 but modern JS)
+    Used for very large integers.
+
+        const bigNumber = 123456789012345678901234567890n;
+
+2. Reference Data Type
+
+    8. Object
+    Stores collections of data.
+
+    const person {
+        name: "Jade",
+        age: 25
+    }
+
+    Arrays and functions are also objects:
+
+    const numbers = [1, 2, 3];
+
+    function greet() {
+        return "Hello";
+    }
+
+Primitive vs Reference (Important!)
+
+Primitive:
+    - Stored directly
+    - Copied by value
+
+    let a = 10;
+    let b = a;
+    b = 20;
+
+    console.log(a); // 10
+
+Reference
+    - Stored by reference (memory address)
+    - Copied by reference
+
+    let obj1 = {name: "Jade"}
+    let obj2 = obj1;
+
+    obj2.name = "Mark";
+
+    console.log(obj1.name);     // "Mark"

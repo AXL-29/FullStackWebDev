@@ -1,0 +1,63 @@
+
+alert();
+    - alert is a built-in function that shows a small popup message box in the browser.
+
+    The function is:
+
+    alert("Your message here");
+
+    What it does:
+        - Display a popup dialog
+        - Shows a message
+        - Has an OK button
+        - Stops (pauses) the code until the user clicks OK
+
+    Example:
+    alert("Hello, Jade!");
+
+    When this runs, the browser shows a popup with the message Hello, Jade!
+
+When is it used?
+    - Simple notification
+    - Debugging (for beginners)
+    - Testing if something works
+
+But in real projectss, developers don't usually use alert() because:
+    - It blocks the page
+    - It looks outdated
+    - It gives poor user experience
+
+Instead, modern apps use:
+    - Costum modal boxes (HTML + CSS)
+    - Toast notifications
+    - Console logs (console.log() for debugging)
+
+-----------------------------------------------------------------------------------------------
+
+prompt();
+    - shows a popup box asking the user to enter input.
+
+    Syntax
+        prompt("Your message here");
+
+    Example:
+        let name = prompt("What is your name: ");
+        alert("Hello, " + name);
+
+    What happens?
+    1. A popup appears with a message.
+    2. The user types something.
+    3. They click OK to cancel.
+    4. The value they typed is returned as a string.
+
+    With a Default Value
+        let age = prompt("Enter your age:", "18");
+    
+    Here:
+    - First argument -> message
+    - Second argument -> default value
+
+    Important Notes!
+    - It always returns a string
+    - If the user clicks Cancel, it returns null
+    - It blocks the page until the user responds (like alert())

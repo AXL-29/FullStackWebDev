@@ -1,0 +1,74 @@
+Variable - is a container used to store data in memory so you can use it later in your programming.
+
+Think of it like a labeled box:
+    - The label = variable name
+    - The content inside = value
+
+Example:
+    let name = "Jade"
+
+    - name -> variable
+    - "Jade" -> value stored inside the variable
+
+    Now you can use it:
+    console.log(name);
+
+    Output:
+    Jade
+
+Why Variables Are Important
+    Without variables
+    - You cannot store user input
+    - You cannot calculate values
+    - You cannot build dynamic websites
+
+    Example:
+    let price = 100;
+    let quantity = 3;
+    let total = price * quantity;
+
+    console.log(total)  // 300
+
+Ways to Declare Variables (ES6)
+    
+    There are 3 ways:
+
+    1. let (Modern & Flexible)
+        Used when the value can change.
+
+        let age = 25;
+        age = 26;   // allowed
+    
+    2. const (Recommended by Default)
+        Used when value should NOT change.
+
+        const PI = 3.14;
+        PI = 3.1416;    // Error
+
+        Best Practice:
+        - Used const by default
+        - Used let if the value needs to change
+
+    3. var (Old Way)
+
+        var name = "Jade";
+
+        - Avoid using var in modern JavaScript
+        - It has scope issues.
+
+Variable Naming Rules
+
+    Must start with:
+        - Letter
+        - _ 
+        - $
+
+        Cannot start with number
+
+    Valid:
+    let userName;
+    let _total;
+    let $price;
+
+    Invalid:
+    let 1name;  // Error

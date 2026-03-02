@@ -1,0 +1,12 @@
+String concatenation - means joining two or more strings together or form one single string.
+
+Think of it like connecting words in a sentence.
+
+1. Using + Operator (Old Way)
+
+    let firstName = "Jade Mark";
+    let lastName = "Gimpao";
+
+    let fullName = firstName + " " + lastName;
+
+    console.log(fullName);

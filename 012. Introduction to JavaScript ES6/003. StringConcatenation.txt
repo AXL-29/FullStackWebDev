@@ -10,3 +10,17 @@ Think of it like connecting words in a sentence.
     let fullName = firstName + " " + lastName;
 
     console.log(fullName);
+
+    Output: 
+    Jade Mark Gimpao
+
+    Here:
+    - + joins the strings
+    - " " adds a space between them
+
+2. Using Template Literals (ES6 Way - Recommended)
+
+    let price = 100;
+    let message = `The total price is ${price} dollars.`;
+
+    Much cleaner.

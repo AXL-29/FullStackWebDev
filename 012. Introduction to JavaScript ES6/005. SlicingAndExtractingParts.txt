@@ -1,0 +1,8 @@
+Slicing and Extracting Parts of a String (ES6)
+- When working with strings in JavaScript, you often need to extract part of a text.
+
+Example:
+    - Get first name from full name
+    - Get domain from email
+    - Get alst 4 digits of a numbers
+

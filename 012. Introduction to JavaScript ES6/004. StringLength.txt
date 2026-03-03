@@ -1,0 +1,22 @@
+length - is a property used to find how many characters are inside a string (or how many elements are inside an array).
+
+1. length with string
+
+    let name = "Jade";
+
+    console.log(name.length);
+
+    Output:
+    4
+
+    It counts every character, including spaces.
+
+2. length with array
+
+    let numbers = [10, 20, 30, 40];
+    console.log(numbers.length);
+
+    Output:
+    4
+
+    It counts how many items are inside the array.

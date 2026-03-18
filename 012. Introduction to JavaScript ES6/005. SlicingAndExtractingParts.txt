@@ -6,3 +6,54 @@ Example:
     - Get domain from email
     - Get alst 4 digits of a numbers
 
+
+1. slice()(Most Recommended)
+
+string.slice(start, end)
+
+- start -> where to begin
+- end -> where to end
+
+Example:
+
+let name = "Jade Mark";
+
+console.log(name.slice(0, 4))
+
+Output:
+Jade
+
+It starts at index 0 and stops before 4.
+
+Understanding Index
+
+J a d e   M a r k
+0 1 2 3 4 5 6 7 8
+
+Spaces also have index numbers!
+
+- Negative numbers(Very Powerful)
+
+let word = JavaScript";
+
+console.log(word.slice(-6));
+
+2. substring() (Older Method)
+Works almost like slice().
+
+let text = "HelloWorld";
+console.log(text.substring(0, 5));
+
+Output:
+Hello
+
+Difference:
+- substring() does NOT support negative numbers
+- slice() is more flexible -> preferred
+
+3. substr() (Deprecated)
+Old method:
+
+text.substr(0, 5);
+
+Not recommended anymore.

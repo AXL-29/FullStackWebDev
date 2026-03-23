@@ -1,0 +1,32 @@
+🟢 1️⃣ Basic Arithmetic Operators
+
+➕ Addition (+)
+let a = 10;
+let b = 5;
+console.log(a + b); // 15
+
+➖ Subtraction (-)
+console.log(a - b); // 5
+
+✖ Multiplication (*)
+console.log(a * b); // 50
+
+➗ Division (/)
+console.log(a / b); // 2
+
+🟰 Exponent (**) (ES6)
+console.log(2 ** 3); // 8
+👉 Means: 2³
+
+🟢 2️⃣ Modulo Operator (%)
+What is it?
+    - The modulo operator (%) returns the remainder after division.
+
+🧠 Example
+console.log(10 % 3);
+
+Output:
+1
+
+Why?
+10 ÷ 3 = 3 remainder 1

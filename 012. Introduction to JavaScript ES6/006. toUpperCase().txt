@@ -1,0 +1,35 @@
+toUpperCase()
+    - is a string method used to convert all letters in a string to uppercase (CAPITAL LETTERS)
+
+Basic Syntax:
+    string.toUpperCase()
+
+Example:
+
+    let name = "jade";
+    let upperName = name.toUpperCase();
+
+    console.log(upperName);
+
+Output:
+    JADE
+
+Important Behavior
+    - It does NOT change the original string
+    - Strings are immutable(cannot be changed)
+
+Correct Way (Store it)
+    let name = "jade";
+    name = name.toUpperCase();
+
+    console.log(name);
+
+Output:
+    JADE
+
+When You'll Use This
+    - Form Validation
+    - User input comparison
+    - Text formatting
+    - Data cleaning
+

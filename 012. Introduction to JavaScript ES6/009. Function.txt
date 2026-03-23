@@ -1,0 +1,24 @@
+📘 What is a Function in JavaScript?
+A function is a block of code designed to perform a specific task.
+
+👉 Instead of writing the same code again and again, you can reuse a function.
+
+🧠 Simple Idea
+Think of a function like a machine:
+Input → (function) → Output
+
+🟢 Basic Syntax
+function functionName() {
+  // code to execute
+}
+
+🟢 Example
+function greet() {
+  console.log("Hello!");
+}
+
+To run it:
+greet();
+
+Output:
+Hello!

@@ -1,0 +1,62 @@
+Increment & Decrement Expressions in JavaScript
+These are shortcuts used to increase or decrease a number by 1.
+
+🟢 1️⃣ Increment (++)
+Adds 1 to a variable.
+
+let x = 5;
+x++;
+
+console.log(x); // 6
+
+Same as:
+x = x + 1;
+
+🟢 2️⃣ Decrement (--)
+
+Subtracts 1 from a variable.
+
+let y = 5;
+y--;
+
+console.log(y); // 4
+
+Same as:
+y = y - 1;
+
+⚠️ Important: Prefix vs Postfix
+
+This is where many beginners get confused 👇
+
+
+🟡 Postfix (x++)
+👉 Use the value first, THEN increment
+
+let x = 5;
+let result = x++;
+
+console.log(result); // 5
+console.log(x);      // 6
+
+
+🟡 Prefix (++x)
+👉 Increment first, THEN use the value
+
+let x = 5;
+let result = ++x;
+
+console.log(result); // 6
+console.log(x);      // 6
+
+🧠 Simple Comparison
+Expression	What happens
+x++	Use → then add
+++x	Add → then use
+
+Shortcut Operators:
+Operator	Meaning
++=	        Add and assign
+-=	        Subtract and assign
+*=	        Multiply and assign
+/=	        Divide and assign
+%=	        Modulo and assign

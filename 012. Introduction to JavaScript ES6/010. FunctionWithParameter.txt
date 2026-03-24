@@ -1,0 +1,44 @@
+Function with Parameters in JavaScript
+   - A function with parameters is a function that accepts inputs (values) so it can work dynamically.
+   - Instead of hardcoding values, you pass data into the function.
+
+🧠 Basic Syntax
+function functionName(parameter1, parameter2) {
+  // code using parameters
+}
+
+🟢 Example 1: One Parameter
+function greet(name) {
+  console.log(`Hello ${name}`);
+}
+
+Call the function:
+greet("Jade");
+
+Output:
+Hello Jade
+
+👉 "Jade" is called an argument (the actual value you pass)
+
+🟢 Example 2: Multiple Parameters
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(5, 3)); // 8
+
+
+🟢 Example 3: Real Use Case
+function calculateTotal(price, quantity) {
+  return price * quantity;
+}
+
+let total = calculateTotal(100, 2);
+
+console.log(total); // 200
+
+
+🧠 Parameter vs Argument
+Term	Meaning
+Parameter	Variable in function (name)
+Argument	Actual value passed ("Jade")
